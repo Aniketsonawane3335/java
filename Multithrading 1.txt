@@ -1,0 +1,35 @@
+ class Main extends Thread 
+{
+    @Override
+    public void run()
+    {
+        try{
+        for(int i=1;i<5;i++)
+        {
+        System.out.println(" bake cake");
+        Thread.sleep(1000);
+        }
+        }
+        catch(InterruptedException i)
+        {
+            
+        }
+    }
+    }
+    
+    
+
+class B {
+    
+    public static void main(String[] args) throws InterruptedException
+    {
+        Main t1=new Main();
+        t1.start();
+        
+         for(int i=1;i<5;i++)
+        {
+        System.out.println(" cake");
+    }
+         
+    }
+}
