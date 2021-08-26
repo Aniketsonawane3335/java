@@ -1,0 +1,33 @@
+ 
+//Multi-Threadng
+
+
+
+
+class Main extends Thread 
+{
+    @Override
+    public void run()
+    {
+        for(int i=1;i<5;i++)
+        {
+        System.out.println(" bake cake");
+    }
+    }
+    
+    
+}
+class B {
+    
+    public static void main(String[] args)
+    {
+        Main t1=new Main();
+        t1.start();
+        
+         for(int i=1;i<5;i++)
+        {
+        System.out.println(" cake");
+    }
+         
+    }
+}
